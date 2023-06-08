@@ -1,0 +1,276 @@
+.logo {
+  height: 50px;
+  left: 20px;
+  top: 15px;
+}
+
+@media (max-width: 800px) {
+  .logo {
+    max-width: 105px;
+  }
+}
+
+.Menu {
+  width: 100%;
+  height: 80px;
+  z-index: 100;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0px 50px;
+
+  background: var(--black);
+  border-bottom: 2px solid var(--primary);
+}
+
+
+
+body {
+  --bodyPaddingTop: 94px;
+  padding-top: var(--bodyPaddingTop);
+}
+
+
+
+.Menu>ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  text-decoration: none;
+}
+
+.Menu ul li {
+  position: relative;
+}
+
+.navLi a {
+  color: #eeeeee;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* .Menu ul li:hover{
+    background-color: #38383881;
+  } */
+
+
+.navLi a:after {
+  content: '';
+  position: absolute;
+  background-color: var(--primary);
+  height: 3px;
+  width: 100%;
+  transform: scaleX(0%);
+  bottom: 25px;
+  left: 0;
+  transition: 0.6s ease;
+}
+
+
+.navLi a:hover:after {
+  transform: scaleX(80%);
+}
+
+.navLi:hover .sub-menu li {
+  display: block
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 98%;
+  left: -60px;
+  width: max-content;
+  z-index: -1;
+  animation: growDown 300ms ease-in-out forwards;
+  transform-origin: top center;
+}
+
+.sub-menu li {
+  display: block;
+  color: white;
+  background-color: var(--black);
+  padding: 10px 20px;
+  font-size: 16px;
+  position: relative;
+}
+
+.navLi:hover .sub-menu {
+  display: block;
+}
+
+
+
+.sub-menu li:hover{
+  background-color: #111111
+}
+
+
+
+
+
+@keyframes growDown {
+  0% {
+    transform: scaleY(0)
+  }
+
+  80% {
+    transform: scaleY(1.1)
+  }
+
+  100% {
+    transform: scaleY(1)
+  }
+}
+
+
+
+
+
+.searchBox {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 30%;
+  transform: translateX(50px);
+  box-shadow: inset -50px 0px 80px -70px rgba(75, 75, 75, 0.5),
+              inset 50px 0px 80px -70px rgba(75, 75, 75, 0.5);
+  padding: 0 15px;
+}
+
+
+.search-btn {
+  width: 40px;
+  cursor: pointer;
+}
+
+
+.search-bar {
+  background: none;
+  border: none;
+  padding: 0 20px;
+  width: 100%;
+  height: 100%;
+  color: var(--white);
+  font-size: 18px;
+}
+
+
+.search-bar::placeholder {
+  font-size: 18px;
+  color: rgba(139, 139, 139, 0.3);
+}
+
+.search-bar:focus {
+  outline: none;
+}
+
+
+.loginContainer {
+  position: fixed;
+  right: 20px;
+}
+
+.loginIcon {
+  height: 40px;
+  cursor: pointer;
+}
+
+
+/* .Menu ul li ul{
+  display: none;
+  transition: all 5s ease;
+  background-color: var(--black); 
+  border-radius: 0px 0px 20px 20px;   
+}
+
+
+.Menu ul li:hover ul{  
+  position: absolute;
+  display: block;
+  top: 70px;   
+  height: min-content;
+  width: max-content;
+  padding: 10px;
+}
+
+.Menu ul li ul li{
+  display: block;
+  color: var(--white);
+  font-size: 16px;
+  padding: 15px 10px;
+} */
+
+/* .Menu ul li ul li:hover{
+  background-color: rgba(139, 139, 139, 0.3);
+  border-radius: 10px;
+} */
+
+
+
+
+
+
+
+/* 
+
+
+  @media (max-width: 800px) {
+    .Menu {
+      height: 40px;
+      justify-content: center;
+    }
+    body {
+      --bodyPaddingTop: 40px;
+      padding-top: var(--bodyPaddingTop);
+    }
+  }
+  
+  .ButtonLink {
+    color: var(--white);
+    border: 1px solid var(--white);
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 16px 24px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: opacity .3s;
+  }
+  .ButtonLink:hover,
+  .ButtonLink:focus {
+    opacity: .5;
+  }
+  
+  @media (max-width: 800px) {
+    a.ButtonLink {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--primary);
+      border-radius: 0;
+      border: 0;
+      text-align: center;
+    }
+  } */
