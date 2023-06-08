@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Imersao-Alura-Tokuflix/static/css/main.a2b97750.css",
+    "main.js": "/Imersao-Alura-Tokuflix/static/js/main.ab181543.js",
+    "static/js/787.da981fbd.chunk.js": "/Imersao-Alura-Tokuflix/static/js/787.da981fbd.chunk.js",
+    "static/media/LogoTokuflixCri.png": "/Imersao-Alura-Tokuflix/static/media/LogoTokuflixCri.9458d7ac9d612b86530e.png",
+    "index.html": "/Imersao-Alura-Tokuflix/index.html",
+    "static/media/lupa.svg": "/Imersao-Alura-Tokuflix/static/media/lupa.402690ccfbb2af7080a801a514bb6292.svg",
+    "static/media/iconmonstr-user-19.svg": "/Imersao-Alura-Tokuflix/static/media/iconmonstr-user-19.c484c00a3e0329358dcfa9d2d1009a56.svg",
+    "main.a2b97750.css.map": "/Imersao-Alura-Tokuflix/static/css/main.a2b97750.css.map",
+    "main.ab181543.js.map": "/Imersao-Alura-Tokuflix/static/js/main.ab181543.js.map",
+    "787.da981fbd.chunk.js.map": "/Imersao-Alura-Tokuflix/static/js/787.da981fbd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2b97750.css",
+    "static/js/main.ab181543.js"
+  ]
+}
